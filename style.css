@@ -15,18 +15,22 @@ body {
 
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background: var(--bg-primary);
 }
 
 .wrapper {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     height: auto;
-    width: 100%;
+    align-items: center;
 }
 
 .batu {
+    width: 40%;
     border-radius: 15px;
     text-align: center;
     border: 2px solid white;
@@ -68,4 +72,13 @@ body {
 .btn:hover {
     background-color: white;
     color: rgb(30, 30, 99);
+}
+
+@media screen and (max-width: 476px) {
+    .batu {
+        width: 96%;
+    }
+    .judul {
+        font-size: 3em;
+    }
 }
